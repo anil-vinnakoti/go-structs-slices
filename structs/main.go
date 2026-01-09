@@ -11,6 +11,17 @@ type student struct {
 	subjects  []string
 }
 
+// to read we can use struct pass by value
+func (s student) getFullName()string{
+	return s.firstName + " " + s.lastname 
+}
+
+// to modify we can use struct pass by reference
+func (s *student) changeFirstName(newFirstName string)string{
+	s.firstName =newFirstName
+	return  s.firstName
+}
+
 func main() {
 	var student1 student
 	fmt.Printf("%+v\n", student1)
@@ -44,5 +55,9 @@ func main() {
 	}
 
 	fmt.Printf("%+v\n", anonymousStruct)
+
+	fmt.Println(student1.getFullName())
+	fmt.Println(student1.changeFirstName("Vinay"))
+	fmt.Println(student1.getFullName())
 
 }
