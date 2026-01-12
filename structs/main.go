@@ -59,5 +59,6 @@ func main() {
 	fmt.Println(student1.getFullName())
 	fmt.Println(student1.changeFirstName("Vinay"))
 	fmt.Println(student1.getFullName())
-
+	
+	embedding()
 }
