@@ -1,7 +1,8 @@
 package main
 
 func main() {
-	unbuffered()
-	buffered()
-	selectPractice()
+	// unbuffered()
+	// buffered()
+	// selectPractice()
+	doneChannel()
 }
